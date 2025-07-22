@@ -1,0 +1,22 @@
+.btn{
+    background-color:goldenrod;
+    width: 200px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 7px;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.4);
+}
+.btn:hover{
+    background-image:linear-gradient(to right, gold,silver,pink);
+    width: 200px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 7px;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 2px 2px 1px rgba(245, 249, 2, 0.658);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Enter the alphanumeric string: <input type="text" id="num">
+  <button id="btn" onclick="check()">Check</button>
+  <label id="lbl1"></label>
+</body>
+<script>
+  function check(){
+    let x = document.getElementById("num").value;
+    let len = x.length;
+    let ispalindrome = true;
+
+    for(i=0; i<len/2; i++){
+      if(x[i] != x[len - i-1]){
+        ispalindrome = false;
+        break;
+      }
+    }
+    if(ispalindrome){
+      document.getElementById("lbl1").innerText = "Yes"
+    }
+    else{
+      document.getElementById("lbl1").innerText = "No"
+    }
+  }
+</script>
+</html>

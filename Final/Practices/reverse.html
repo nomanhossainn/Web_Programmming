@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Enter a number: <input type="text" id="num"><br>
+  <button id="btn" onclick="checkReverse('+')">Reverse</button>
+  <button id="btn1" onclick="checkReverse('-')">Palindrome</button><br>
+  Result: <label id="lbl1"></label>
+</body>
+<script>
+  function checkReverse(op){
+    let x = Number(document.getElementById("num").value);
+    let temp = x;
+    reverse = 0;
+    while(temp!=0){
+      let one = temp % 10;
+      reverse = reverse * 10 + one;
+      temp = Math.floor(temp/10);
+    }
+    if(op=='+'){
+      document.getElementById("lbl1").innerText = reverse;
+    }
+    else{
+      if(x==reverse){
+        document.getElementById("lbl1").innerText = "Yes"
+      }
+      else{
+        document.getElementById("lbl1").innerText = "No"
+      }
+    }
+    
+  }
+</script>
+</html>

@@ -1,1 +1,69 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SingUP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="parent_div">
+        <div id="input_div">
+            <form>
+                <table>
+                <tr>
+                    <td> <label class="txt">Name:</label></td>
+                    <td><input type="text" class="inputfield"/></td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Email:</label></td>
+                    <td><input type="text" class="inputfield"/></td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Password:</label></td>
+                    <td><input type="text" class="inputfield"/></td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Pin:</label></td>
+                    <td><input type="number" class="inputfield"/></td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Gender:</label></td>
+                    <td>
+                        <label><input type="radio" name="R">Male</label>
+                        <label><input type="radio" name="R">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Country:</label></td>
+                    <td>
+                    <select>
+                        <option disabled selected hidden> Select Country</option>
+                        <option>Banglagesh</option>
+                        <option>Real Mardrid</option>
+                        <option>Saudi Arabia</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Fruits:</label></td>
+                    <td>
+                        <label><input type="checkbox" name="R">Mango</label>
+                        <label><input type="checkbox" name="R">Apple</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="txt">Photo:</label></td>
+                    <td><input type="file" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td class="top"><label class="txt">Address:</label></td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button id="btn">Sign In</button></td>
+                </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>

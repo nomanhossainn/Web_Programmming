@@ -1,0 +1,176 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00b894;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #00b894;
+}
+
+.visit-btn {
+  background-color: #00b894;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  
+}
+
+.hero-text {
+  width: 50%;
+  margin-top: -170px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  color: #2d3436;
+}
+
+.hero-text .green {
+  color: #00b894;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #636e72;
+  font-size: 16px;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: #00b894;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-image {
+  position: relative; /* Allows movement */
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+
+  /* Movement Controls */
+  position: relative;
+  top: -60px;    /* move down by increasing */
+  left: 70px;   /* move right by increasing */
+}
+
+
+/* Arrows */
+.arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #00b894;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #00b894;
+  padding: 25px 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: -150px; /* 🠔 this pulls it upwards */
+  z-index: 1;
+  position: relative;
+  border-radius: 0px;
+}
+
+.search-section input,
+.search-section select {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 350px;
+}
+
+.search-btn {
+  background-color: #2d3436;
+  color: white;
+  padding: 12px 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

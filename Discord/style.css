@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f2f3f5;
+  color: #23272a;
+}
+
+.navbar {
+  background-color: #404eed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  color: white;
+}
+
+.logo {
+  height: 32px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: white;
+  color: #404eed;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #5865f2, #404eed);
+  position: relative;
+  text-align: center;
+  padding: 150px 20px 120px; /* taller hero */
+  color: white;
+  overflow: hidden;
+}
+
+.illustration {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: cover;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.search-section input {
+  width: 50%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-btn {
+  background-color: #5865f2;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters-results {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 30px;
+}
+
+.filters {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter {
+  background: #e3e5e8;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.results-info {
+  flex: 3;
+  padding-top: 10px;
+}
+
+.server-card {
+  background: white;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.server-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.server-info {
+  padding: 15px;
+}
+
+.server-info h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.server-info p {
+  margin-bottom: 6px;
+  color: #4f545c;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}

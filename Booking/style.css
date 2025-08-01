@@ -1,0 +1,226 @@
+/* Resetting default styles and applying a consistent font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Sets the background color of the entire page */
+body {
+  background-color: #fff;
+}
+
+/* Styles the top header section */
+header {
+  background-color: #003580;
+  color: white;
+  padding-bottom: 60px;
+}
+
+/* Styles the top navigation bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Styles the logo text */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles navigation buttons */
+.nav-options button {
+  background: none;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Highlights the active navigation option */
+.nav-options .active {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+/* Styles buttons for login/signup */
+.auth-links button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: 1px solid white;
+  background: white;
+  color: #003580;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Styles the hero section at the top */
+.hero {
+  text-align: left;
+  padding: 60px 80px 0 80px;
+  max-width: 1200px;
+  position: relative; /* Enables absolute positioning for child elements */
+}
+
+/* Styles the main headline */
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles the subtitle text */
+.hero p {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+/* Container for search inputs */
+.search-box {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+/* Individual input field styling */
+.search-box input {
+  padding: 18px 20px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  min-width: 260px;
+  font-size: 16px;
+}
+
+/* Container for grouping search fields */
+.search-fields {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* Search button styling */
+.search-btn {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 18px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Section containing promotional offers */
+.offers {
+  padding: 80px 80px 60px;
+}
+
+/* Heading for offers section */
+.offers h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+/* Subheading or description in offers section */
+.offers p {
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Card layout for each offer */
+.offer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Text container inside offer card */
+.offer-text h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+/* Description text in offer */
+.offer-text p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* Button in the offer section */
+.offer-text button {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Image inside the offer card */
+.offer-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Container for quick search options */
+.search-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000000;
+  text-align: left;
+  padding: 40px 60px 0 0px;
+  max-width: 1000px;
+}
+
+/* Each clickable search option with icon */
+.search-options .option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect for search options */
+.search-options .option:hover {
+  transform: translateY(-3px);
+}
+
+/* Icon inside each search option */
+.search-options .option img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

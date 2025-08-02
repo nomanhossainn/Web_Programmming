@@ -1,0 +1,223 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Global font */
+}
+
+body {
+  background-image: url("background.jpg");      /* Full-page background */
+  background-size: cover;        /* Cover entire viewport */
+  background-position: center;   /* Center the background image */
+  background-repeat: no-repeat;  /* Prevent tiling */
+  background-attachment: fixed;   /* Make background stay in place while scrolling */
+  min-height: 100vh;               /* Ensure full height */
+  color: #000;                   /* Default text color */
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;                                        /* Horizontal layout */
+  justify-content: space-between;                      /* Space between left and right */
+  align-items: center;                                 /* Vertically center items */
+  padding: 20px 50px;                                   /* Space inside nav */
+  position: relative;                                  /* Required for center-nav absolute positioning */
+}
+
+/* Logo Section on the Left */
+.left-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;                                            /* Space between logo image and text */
+}
+/* Logo Image */
+.left-logo img {
+  height: 35px;                                         /* Logo height */
+}
+ /* Logo Text */
+.left-logo span {
+  font-weight: bold;
+  font-size: 1.2rem;                                    /* Logo text style */
+}
+
+/* Center Navigation Menu */
+.center-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);                         /* Center horizontally */
+}
+ /* Navigation Menu Items */
+.center-nav ul {
+  list-style: none;                                    /* Remove default bullet points */
+  display: flex;
+  gap: 30px;                                           /* Space between menu items */
+}
+ /* Navigation Menu Item Links */
+.center-nav li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;                /* Invisible border for hover effect */
+}
+ /* Navigation Menu Item Links Hover Effect */
+.center-nav li a:hover,
+.center-nav li a:focus {
+  border-bottom: 2px solid #00aa6c;                    /* Green underline on hover */
+  color: #00aa6c;                                      /* Text color change on hover */
+}
+
+/* Sign-In Button on the Right */
+.right-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+ /* Sign-In Button */
+.sign-in {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;                                 /* Rounded button */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Main Section Below Navigation */
+.hero-section {
+  max-width: 1000px;
+  margin: 0 auto;                                      /* Center the section */
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Main Headline Text */
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: #000000;                                      /* Black text */
+}
+
+/* Search Option Icons (with label) */
+.search-options {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000;
+}
+ /* Search Option Icons */
+.search-options .option {
+  display: flex;
+  align-items: center;                                /* Icon and label align vertically */
+  gap: 8px;                                            /* Space between image and text */
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);              /* Soft shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease;                    /* Hover effect */
+}
+  
+.search-options .option:hover {
+  transform: translateY(-3px);                        /* Lift up slightly on hover */
+}
+ 
+.search-options .option img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;                                /* Keep aspect ratio */
+}
+
+/* Search Bar Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+ /* Search Bar */
+.search-container input {
+  width: 60%;
+  padding: 20px 25px;
+  border: 2px solid #ddd;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);        /* Input shadow */
+}
+ /* Search Button */
+.search-container button {
+  padding: 18px 30px;
+  background-color: #00aa6c;                          /* Green button */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #008d5a;                          /* Darker green on hover */
+}
+
+/* AI Trip Builder Promo Box */
+.ai-box {
+  background-image: url('picture.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 30px;
+  border-radius: 20px;
+  color: white;
+  text-align: left;
+}
+ 
+.ai-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+/* AI Trip Builder Button */
+.beta-label {
+  background: white;
+  color: black;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/* AI Trip Builder Promo Box */
+.ai-box h2 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* AI Trip Builder Promo Box */
+.ai-box p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+ /* End AI Trip Builder Promo Box */
+.ai-btn {
+  background: white;
+  color: black;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.ai-btn:hover {
+  background: #eee;                                   /* Light gray hover effect */
+}

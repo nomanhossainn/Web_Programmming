@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background: #fff;
+  padding: 20px 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left ul,
+.nav-right ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 18px;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.nav-center {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-center img {
+  height: 40px;
+}
+
+.nav-right {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-right ul {
+  justify-content: flex-end;
+}
+
+.hero {
+  background: url('image.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 600px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 25px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.recommendation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  gap: 0x;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.sign-in {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #006AFF;
+  background: white;
+  color: #006AFF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-content img {
+  max-width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-text img {
+  height: 40px;
+}
+
+.logo-text span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}

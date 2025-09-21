@@ -26,7 +26,7 @@ Gain practical experience by building small web-based projects.
 
 Clone this repository:
 
-git clone https://github.com/your-username/Web-programming.git
+git clone https://github.com/nomanhossainn/Web_Programming.git
 
 
 Open the HTML/CSS/JavaScript files in a browser for client-side examples.
